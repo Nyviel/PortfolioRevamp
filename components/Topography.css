@@ -1,0 +1,8 @@
+/* Fixed to the viewport so the canvas (and the per-pixel shader) only covers
+   what is on screen, rather than the full document height. */
+.topography-container {
+	position: fixed;
+	inset: 0;
+	overflow: hidden;
+	pointer-events: none;
+}

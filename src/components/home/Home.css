@@ -1,0 +1,18 @@
+/* Scoped to the hero tag list: an unscoped `li` rule here used to add a
+   square marker and padding to every list item on the page. */
+.hero-tags li {
+	list-style: none;
+	position: relative;
+	padding-left: 1.25rem;
+}
+
+.hero-tags li::before {
+	content: "";
+	position: absolute;
+	left: 7px;
+	top: 50%;
+	width: 6px;
+	height: 6px;
+	background: hsl(333, 55%, 31%);
+	transform: translateY(-50%);
+}

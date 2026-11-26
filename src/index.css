@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/geist";
+@import "lenis/dist/lenis.css";
+@custom-variant dark (&: is(.dark *));
+
+:root {
+	--sans: system-ui, "Segoe UI", Roboto, sans-serif;
+	--heading: system-ui, "Segoe UI", Roboto, sans-serif;
+	--mono: ui-monospace, Consolas, monospace;
+
+	color-scheme: light dark;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	@media (max-width: 1024px) {
+		font-size: 16px;
+	}
+}
+
+body {
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.pixel {
+	font-family: "Pixelify Sans", sans-serif;
+	font-optical-sizing: auto;
+}
+
+.micro-5 {
+	font-family: "Micro 5", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+::selection {
+	background: #c73d7b;
+	color: white;
+}
